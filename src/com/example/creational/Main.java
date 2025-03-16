@@ -1,9 +1,11 @@
-import singleton.BranchManager;
-import factory_method.Parcel;
-import factory_method.ParcelFactory;
-import builder.Order;
-import prototype.Shipment;
-import abstract_factory.*;
+package com.example.creational;
+
+import com.example.creational.singleton.BranchManager;
+import com.example.creational.factory_method.Parcel;
+import com.example.creational.factory_method.ParcelFactory;
+import com.example.creational.builder.Order;
+import com.example.creational.prototype.Shipment;
+import com.example.creational.abstract_factory.*;
 
 public class Main {
     public static void main(String[] args) {

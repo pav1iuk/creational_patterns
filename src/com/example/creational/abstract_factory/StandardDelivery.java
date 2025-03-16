@@ -1,4 +1,4 @@
-package abstract_factory;
+package com.example.creational.abstract_factory;
 
 public class StandardDelivery implements DeliveryService {
     public void send() {

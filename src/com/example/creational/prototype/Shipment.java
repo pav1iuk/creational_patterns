@@ -1,4 +1,4 @@
-package prototype;
+package com.example.creational.prototype;
 
 public class Shipment implements Cloneable {
     private String details;

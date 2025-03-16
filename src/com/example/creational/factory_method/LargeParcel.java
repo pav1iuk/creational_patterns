@@ -1,4 +1,4 @@
-package factory_method;
+package com.example.creational.factory_method;
 
 public class LargeParcel implements Parcel {
     public void deliver() {

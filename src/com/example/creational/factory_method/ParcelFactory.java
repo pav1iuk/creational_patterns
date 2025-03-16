@@ -1,4 +1,4 @@
-package factory_method;
+package com.example.creational.factory_method;
 
 public class ParcelFactory {
     public static Parcel createParcel(String type) {

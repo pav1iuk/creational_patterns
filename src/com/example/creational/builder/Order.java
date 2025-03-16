@@ -1,4 +1,4 @@
-package builder;
+package com.example.creational.builder;
 
 public class Order {
     private String sender;
