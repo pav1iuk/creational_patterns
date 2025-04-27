@@ -1,5 +1,5 @@
 package com.example.behavioral.observer;
 
 public interface Observer {
-    void update(String status);
+    void update(String info);
 }

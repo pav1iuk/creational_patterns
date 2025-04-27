@@ -1,6 +1,6 @@
 package com.example.behavioral.chain_of_responsibility;
 
-public class Operator implements Handler {
+public class Manager implements Handler {
     private Handler next;
 
     @Override
@@ -10,8 +10,8 @@ public class Operator implements Handler {
 
     @Override
     public void handleRequest(String request) {
-        if (request.equals("track")) {
-            System.out.println("Оператор надає інформацію про відстеження посилки.");
+        if (request.equals("complaint")) {
+            System.out.println("Менеджер обробляє скаргу клієнта.");
         } else if (next != null) {
             next.handleRequest(request);
         } else {

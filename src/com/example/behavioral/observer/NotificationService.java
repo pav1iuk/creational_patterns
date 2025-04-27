@@ -1,17 +1,16 @@
 package com.example.behavioral.observer;
-
 import java.util.*;
 
-public class PostOffice {
+public class NotificationService {
     private List<Observer> observers = new ArrayList<>();
 
-    public void addObserver(Observer observer) {
+    public void subscribe(Observer observer) {
         observers.add(observer);
     }
 
-    public void notifyObservers(String status) {
+    public void notifyAllObservers(String info) {
         for (Observer o : observers) {
-            o.update(status);
+            o.update(info);
         }
     }
 }

@@ -1,17 +1,21 @@
 package com.example.behavioral.memento;
 
 public class PackageTracker {
-    private String state;
+    private String status;
 
-    public void setState(String state) {
-        this.state = state;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public Memento saveState() {
-        return new Memento(state);
+    public String getStatus() {
+        return status;
     }
 
-    public void restoreState(Memento memento) {
-        this.state = memento.getState();
+    public Memento save() {
+        return new Memento(status);
+    }
+
+    public void restore(Memento memento) {
+        this.status = memento.getState();
     }
 }

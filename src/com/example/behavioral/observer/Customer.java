@@ -8,8 +8,8 @@ public class Customer implements Observer {
     }
 
     @Override
-    public void update(String status) {
-        System.out.println(name + " отримав оновлення: " + status);
+    public void update(String info) {
+        System.out.println(name + " отримав повідомлення: " + info);
     }
 }
 

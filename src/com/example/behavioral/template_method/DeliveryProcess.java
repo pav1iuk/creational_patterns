@@ -3,11 +3,11 @@ package com.example.behavioral.template_method;
 public abstract class DeliveryProcess {
     public final void deliver() {
         pack();
-        ship();
-        deliverToClient();
+        transport();
+        deliverToCustomer();
     }
 
-    abstract void pack();
-    abstract void ship();
-    abstract void deliverToClient();
+    protected abstract void pack();
+    protected abstract void transport();
+    protected abstract void deliverToCustomer();
 }

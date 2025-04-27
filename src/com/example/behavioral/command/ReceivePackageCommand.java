@@ -1,14 +1,14 @@
 package com.example.behavioral.command;
 
-public class SendPackageCommand implements Command {
+public class ReceivePackageCommand implements Command {
     private Warehouse warehouse;
 
-    public SendPackageCommand(Warehouse warehouse) {
+    public ReceivePackageCommand(Warehouse warehouse) {
         this.warehouse = warehouse;
     }
 
     @Override
     public void execute() {
-        warehouse.sendPackage();
+        warehouse.receivePackage();
     }
 }

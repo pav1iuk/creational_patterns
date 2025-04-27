@@ -1,13 +1,17 @@
 package com.example.behavioral.command;
+import java.util.*;
 
 public class Client {
-    private Command command;
+    private List<Command> commands = new ArrayList<>();
 
-    public void setCommand(Command command) {
-        this.command = command;
+    public void addCommand(Command command) {
+        commands.add(command);
     }
 
-    public void sendRequest() {
-        command.execute();
+    public void processCommands() {
+        for (Command c : commands) {
+            c.execute();
+        }
+        commands.clear();
     }
 }
